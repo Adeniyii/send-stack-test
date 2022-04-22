@@ -1,5 +1,8 @@
 # Sendstack Frontend Test
 
+### Deploy
+Live Here: [https://sendstack-test.netlify.app/](https://sendstack-test.netlify.app/)
+
 ### The Task
 - Sendstack enables users to book next-day deliveries through our platform. This task is designed to match what you will be doing at Sendstack as part of your tasks. All the APIs you’ll need to complete this task can be found here: ```(xxx)```
 - Build on the sandbox server
