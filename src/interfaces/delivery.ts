@@ -29,3 +29,11 @@ export interface IDeliveryPriceData {
     price: number;
   };
 }
+
+export interface IWalletBalanceData {
+  status: boolean;
+  message: string;
+  data: {
+    balance: number;
+  };
+}

@@ -10,6 +10,14 @@ export const deliveryLocationsApi = () => {
 };
 
 /**
+ * Send request for wallet balance
+ * @returns Wallet balance
+ */
+export const walletBalanceApi = () => {
+  return client().get('/wallet/balance');
+};
+
+/**
  * Send request for delivery location price
  * @returns Delivery location price data
  */

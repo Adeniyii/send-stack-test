@@ -5,6 +5,7 @@ import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import OrderComponent from "./OrderComponent";
 import { Link } from "react-router-dom";
 import DeliveryPriceComponent from "./DeliveryPriceComponent";
+import WalletBalanceComponent from "./WalletBalanceComponent";
 
 const user = {
   name: "Tom Cook",
@@ -201,13 +202,10 @@ function DashBoard() {
             <div className="flex-1 h-full">
               <OrderComponent />
             </div>
-            <div className="flex-1 h-full bg-gray-800 rounded-2xl p-8 grid place-content-center">
-              <h2 className="text-white text-xl font-semibold underline absolute">Delivery Summary</h2>
-              <div className="grid place-content-center bg-white rounded-2xl p-6">
-                <p>woooo</p>
-                <DeliveryPriceComponent />
-                {/* <WalletBalance /> */}
-              </div>
+            <div className="flex-1 h-full bg-gray-800 text-white rounded-2xl p-8 flex flex-col">
+              <h2 className="text-xl font-semibold underline mb-4">Delivery Summary</h2>
+              <DeliveryPriceComponent />
+              <WalletBalanceComponent />
             </div>
           </div>
         </div>
