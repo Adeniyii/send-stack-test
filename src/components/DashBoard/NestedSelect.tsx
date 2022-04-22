@@ -12,7 +12,7 @@ export const NestedSelect: FC<Props> = ({ Icon, rest, ...delegated }) => {
 	const { provinces, deliveryLocations, handleSelectLocation } = useFetchDeliveryLocations()
 
   return (
-    <div {...delegated} className="flex flex-col gap-3">
+    <div {...delegated} className="flex flex-col gap-6">
       <label className="flex gap-4 items-center">
         <span className="w-5">
           <Icon />

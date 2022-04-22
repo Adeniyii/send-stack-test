@@ -27,10 +27,11 @@ const PickupComponent: FC<Props> = ({ title }) => {
               } w-5 h-5 text-purple-500`}
             />
           </Disclosure.Button>
-          <Disclosure.Panel className="border-2 border-dashed border-gray-300 flex flex-col gap-3 px-4 pt-4 pb-2 text-sm font-medium text-gray-700">
+          <Disclosure.Panel className="border-2 border-dashed border-gray-300 flex flex-col gap-6 px-4 pt-4 pb-2 text-sm font-medium text-gray-700">
             <NestedInput
               Icon={LocationMarkerIcon}
               type="text"
+              title="address"
               error={errors.pickup?.address}
               placeholder="2, Kyrie street, Lagos."
               rest={register("pickup.address", { required: true })}
@@ -42,6 +43,7 @@ const PickupComponent: FC<Props> = ({ title }) => {
             <NestedInput
               Icon={LocationMarkerIcon}
               type="text"
+              title="pickup name"
               error={errors.pickup?.pickupName}
               placeholder="Frank Vogel"
               rest={register("pickup.pickupName", { required: true })}
@@ -49,6 +51,7 @@ const PickupComponent: FC<Props> = ({ title }) => {
             <NestedInput
               Icon={LocationMarkerIcon}
               type="text"
+              title="pickup name"
               error={errors.pickup?.pickupName}
               placeholder="Frank Vogel"
               rest={register("pickup.pickupName", { required: true })}
@@ -56,6 +59,7 @@ const PickupComponent: FC<Props> = ({ title }) => {
             <NestedInput
               Icon={LocationMarkerIcon}
               type="text"
+              title="pickup number"
               error={errors.pickup?.pickupNumber}
               placeholder="08066699990"
               rest={register("pickup.pickupNumber", { required: true })}
@@ -63,13 +67,15 @@ const PickupComponent: FC<Props> = ({ title }) => {
             <NestedInput
               Icon={LocationMarkerIcon}
               type="date"
+              title="pickup date"
               error={errors.pickup?.pickupDate}
-              placeholder="08066699990"
-              rest={register("pickup.pickupDate", { required: false })}
+              placeholder="2022-11-04"
+              rest={register("pickup.pickupDate", { required: true })}
             />
             <NestedInput
               Icon={LocationMarkerIcon}
               type="text"
+              title="note"
               error={errors.pickup?.note}
               placeholder="Please come on time"
               rest={register("pickup.note", { required: false })}

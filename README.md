@@ -24,3 +24,11 @@ Live Here: [https://sendstack-test.netlify.app/](https://sendstack-test.netlify.
 - Redux
 - Tailwind
 - Typescript
+
+### Work Done
+- Implemented `request delivery` UI and API Intrgration.
+- Fetch and display Wallet details.
+- Halfway through implementing `Fetch display price` functionality.
+
+### Work Not done
+- No Tests.

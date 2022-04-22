@@ -29,10 +29,11 @@ const DropoffComponent:FC<Props> = ({ title, count }) => {
               } w-5 h-5 text-purple-500`}
             />
           </Disclosure.Button>
-          <Disclosure.Panel className="border-2 border-dashed border-gray-300 flex flex-col gap-3 px-4 pt-4 pb-2 text-sm font-medium text-gray-700">
+          <Disclosure.Panel className="border-2 border-dashed border-gray-300 flex flex-col gap-6 px-4 pt-4 pb-2 text-sm font-medium text-gray-700">
             <NestedInput
               Icon={LocationMarkerIcon}
               type="text"
+              title="address"
               error={dropErrors && dropErrors[count].address}
               placeholder="2, Kyrie street, Lagos."
               rest={register(`drops.${count}.address`, { required: true })}
@@ -44,6 +45,7 @@ const DropoffComponent:FC<Props> = ({ title, count }) => {
             <NestedInput
               Icon={LocationMarkerIcon}
               type="text"
+              title="recipient name"
               error={dropErrors && dropErrors[count].recipientName}
               placeholder="Monty Williams"
               rest={register(`drops.${count}.recipientName`, {
@@ -53,6 +55,7 @@ const DropoffComponent:FC<Props> = ({ title, count }) => {
             <NestedInput
               Icon={LocationMarkerIcon}
               type="text"
+              title="recipient number"
               error={dropErrors && dropErrors[count].recipientNumber}
               placeholder="08066699990"
               rest={register(`drops.${count}.recipientNumber`, {
@@ -62,6 +65,7 @@ const DropoffComponent:FC<Props> = ({ title, count }) => {
             <NestedInput
               Icon={LocationMarkerIcon}
               type="text"
+              title="alt recipient number"
               error={dropErrors && dropErrors[count].altRecipientNumber}
               placeholder="08066699990"
               rest={register(`drops.${count}.altRecipientNumber`, {
@@ -71,6 +75,7 @@ const DropoffComponent:FC<Props> = ({ title, count }) => {
             <NestedInput
               Icon={LocationMarkerIcon}
               type="text"
+              title="note"
               placeholder="Please come on time"
               rest={register(`drops.${count}.note`, { required: false })}
               textArea
