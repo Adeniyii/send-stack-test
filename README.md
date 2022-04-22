@@ -1,46 +1,15 @@
-# Getting Started with Create React App
+# Sendstack Frontend Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### The Task
+- Sendstack enables users to book next-day deliveries through our platform. This task is designed to match what you will be doing at Sendstack as part of your tasks. All the APIs you’ll need to complete this task can be found here: ```(xxx)```
+- Build on the sandbox server
 
-## Available Scripts
+### Requirements
+1. At your discretion create a design for a delivery booking page that enables users request a rider at one pickup and multiple drop off locations. The output should carry your own design. This requirement will be used to judge your ability as a frontend developer as well as your design skills.
+2. Before a user completes a booking, they should be able to see the price of the booking
+3. All tasks must be carried out using React and redux. NextJs is also a valid option. You are also free to use any other libraries you may find useful.
+4. The solution must be heavily tested (Unit tests, api tests etc).
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Submission
+- Create a repository on gitlab and invite ```(xxx)``` and ```(xxx)``` to view it.
+- The repository should be private.

@@ -1,0 +1,3 @@
+export enum ActionType {
+  FETCH_DELIVERY_LOCATIONS = "FETCH_DELIVERY_LOCATIONS",
+}
