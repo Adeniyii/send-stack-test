@@ -4,6 +4,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import OrderComponent from "./OrderComponent";
 import { Link } from "react-router-dom";
+import DeliveryPriceComponent from "./DeliveryPriceComponent";
 
 const user = {
   name: "Tom Cook",
@@ -204,8 +205,8 @@ function DashBoard() {
               <h2 className="text-white text-xl font-semibold underline absolute">Delivery Summary</h2>
               <div className="grid place-content-center bg-white rounded-2xl p-6">
                 <p>woooo</p>
-                {/* <DeliveryPrice />
-                <WalletBalance /> */}
+                <DeliveryPriceComponent />
+                {/* <WalletBalance /> */}
               </div>
             </div>
           </div>

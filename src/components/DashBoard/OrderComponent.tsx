@@ -11,7 +11,7 @@ function OrderComponent() {
 
   const dropOffCount = useRef(1);
   const [dropOffComponents, setDropOffComponents] = useState([<DropoffComponent key={dropOffCount.current} title={`DropOff ${dropOffCount.current}`} count={dropOffCount.current} />]);
-  const { submitting, placeDelivery } = usePlaceDelivery()
+  const { placeDelivery } = usePlaceDelivery()
 
   const {handleSubmit} = methods;
   const onSubmit: SubmitHandler<IDeliveryDto> = (data) => placeDelivery(data);

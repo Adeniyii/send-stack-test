@@ -21,3 +21,11 @@ export interface IDeliveriesPriceDto {
     long: string;
   };
 }
+
+export interface IDeliveryPriceData {
+  status: boolean;
+  message: string;
+  data: {
+    price: number;
+  };
+}
