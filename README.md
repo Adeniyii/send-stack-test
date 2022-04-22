@@ -13,3 +13,11 @@
 ### Submission
 - Create a repository on gitlab and invite ```(xxx)``` and ```(xxx)``` to view it.
 - The repository should be private.
+
+## Solution
+
+### Tech stack
+- React
+- Redux
+- Tailwind
+- Typescript
