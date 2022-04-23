@@ -51,14 +51,6 @@ const PickupComponent: FC<Props> = ({ title }) => {
             <NestedInput
               Icon={LocationMarkerIcon}
               type="text"
-              title="pickup name"
-              error={errors.pickup?.pickupName}
-              placeholder="Frank Vogel"
-              rest={register("pickup.pickupName", { required: true })}
-            />
-            <NestedInput
-              Icon={LocationMarkerIcon}
-              type="text"
               title="pickup number"
               error={errors.pickup?.pickupNumber}
               placeholder="08066699990"
@@ -66,10 +58,18 @@ const PickupComponent: FC<Props> = ({ title }) => {
             />
             <NestedInput
               Icon={LocationMarkerIcon}
+              type="text"
+              title="alt pickup number"
+              error={errors.pickup?.altPickupNumber}
+              placeholder="08066699990"
+              rest={register("pickup.altPickupNumber", { required: true })}
+            />
+            <NestedInput
+              Icon={LocationMarkerIcon}
               type="date"
               title="pickup date"
               error={errors.pickup?.pickupDate}
-              placeholder="2022-11-04"
+              placeholder=""
               rest={register("pickup.pickupDate", { required: true })}
             />
             <NestedInput

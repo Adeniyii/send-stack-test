@@ -15,7 +15,7 @@ const NestedInput: FC<Props> = ({ placeholder, Icon, type, textArea, error, rest
   return (
     <div className="">
       <label className="flex gap-4 items-center">
-        <span className="w-5 items-baseline">
+        <span className="w-5">
           <Icon />
         </span>
         <div className="flex flex-col w-full">
