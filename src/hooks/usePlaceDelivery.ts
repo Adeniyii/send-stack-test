@@ -6,6 +6,7 @@ import { IDeliveryDto } from '../interfaces';
 
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AxiosError } from 'axios';
 
 export const usePlaceDelivery = () => {
 	  const [submitting, setSubmitting] = useState(false);
@@ -22,9 +23,10 @@ export const usePlaceDelivery = () => {
 					toast.success("Order placed successfully!")
 				}
         setSubmitting(false);
-      } catch (error: any) {
+      } catch (error) {
+        const apiError = error as AxiosError;
         setSubmitting(false);
-        toast.error(handleApiError(error));
+        toast.error(handleApiError(apiError.response));
       }
     }, []);
 
