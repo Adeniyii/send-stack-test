@@ -1,4 +1,5 @@
 import React from "react";
+import { formatMoney } from "../../helpers/common";
 import { useFetchWalletBalance } from "../../hooks/useFetchWalletBalance";
 
 const WalletBalanceComponent = () => {
@@ -7,7 +8,11 @@ const WalletBalanceComponent = () => {
   return (
     <div className="flex gap-4">
       <h3>Wallet Balance:</h3>
-      <span className="font-medium">{walletBalance?.data.balance ?? "--"}</span>
+      <span className="font-medium">
+        {walletBalance?.data.balance
+          ? formatMoney(walletBalance?.data.balance)
+          : "0"}
+      </span>
     </div>
   );
 };
