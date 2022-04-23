@@ -11,7 +11,7 @@ const WalletBalanceComponent = () => {
       <span className="font-medium">
         {walletBalance?.data.balance
           ? formatMoney(walletBalance?.data.balance)
-          : "0"}
+          : formatMoney(0)}
       </span>
     </div>
   );
